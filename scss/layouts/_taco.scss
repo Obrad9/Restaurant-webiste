@@ -3,6 +3,10 @@
     background-color: $bg-color;
     display: flex;
     align-items: center;
+    
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+    }
 
     &__img {
         padding: 2rem 0 2rem 2rem;
@@ -10,19 +14,31 @@
 
     &__header {
         margin: 1rem 0;
+
+        @media screen and (max-width: 500px) {
+            text-align: center;
+        }
     }
 
     &__text {
         line-height: 1.5;
         font-weight: 600;
+
+        @media screen and (max-width: 500px) {
+            text-align: center;
+        }
     }
     
     &__link {
         display: block;
-        width: fit-content;
+        width: 100%;
         margin: 1rem 0;
         text-decoration: none;
         background-color: white;
         padding: 0.5rem 1rem;
+
+        @media screen and (max-width: 500px) {
+            text-align: center;
+        }
     }
 }

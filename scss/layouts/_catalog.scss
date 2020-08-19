@@ -2,6 +2,11 @@
     display: flex;
     margin: 1rem 0;
 
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+        margin: 0;
+    }
+
     .article {
         flex: 1;
         text-align: center;
@@ -15,6 +20,10 @@
 
         &__icon {
             font-size: 3.5rem;
+
+            @media screen and (max-width: 500px) {
+                font-size: 3rem;
+            }
         }
 
         &__header {
@@ -23,6 +32,10 @@
 
         &__text {
             margin: 0.5rem 2rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            margin: 0 0 0.5rem;
         }
     }
 }

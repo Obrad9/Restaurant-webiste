@@ -351,8 +351,14 @@ body {
 .nav {
   margin: 50px 50px 1rem;
 }
+@media screen and (max-width: 500px) {
+  .nav {
+    margin: 1rem;
+  }
+}
 .nav__list {
   display: flex;
+  flex-wrap: wrap;
 }
 .nav__item {
   flex: 1;
@@ -364,6 +370,16 @@ body {
 .nav__item:last-child {
   margin: 0;
 }
+@media screen and (max-width: 500px) {
+  .nav__item {
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 500px) and (min-width: 500px) {
+  .nav__item:nth-child(4) {
+    margin-right: 0;
+  }
+}
 .nav__link {
   text-decoration: none;
   display: inline-block;
@@ -374,18 +390,40 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 }
+@media screen and (max-width: 500px) {
+  .nav__link {
+    padding: 0.3rem;
+    font-size: 1.2rem;
+  }
+}
 
 .wrap {
   margin: 0 50px;
+}
+@media screen and (max-width: 500px) {
+  .wrap {
+    margin: 0 1rem;
+  }
 }
 .wrap .hero {
   display: flex;
   height: 60vh;
 }
+@media screen and (max-width: 500px) {
+  .wrap .hero {
+    flex-direction: column;
+  }
+}
 .wrap .hero__article {
   flex: 2;
   background-image: url(https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/taco.jpg);
   background-position: center;
+}
+@media screen and (max-width: 500px) {
+  .wrap .hero__article {
+    background-size: cover;
+    height: 40vh;
+  }
 }
 .wrap .hero__title {
   height: 100%;
@@ -394,12 +432,23 @@ body {
   justify-content: center;
   margin-left: 5rem;
 }
+@media screen and (max-width: 500px) {
+  .wrap .hero__title {
+    margin-left: 1rem;
+  }
+}
 .wrap .hero__header {
   background-color: orange;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.5rem 1rem;
+}
+@media screen and (max-width: 500px) {
+  .wrap .hero__header {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
 }
 .wrap .hero__text {
   background-color: orange;
@@ -409,11 +458,23 @@ body {
   padding: 0.4rem 0.7rem;
   font-weight: bold;
 }
+@media screen and (max-width: 500px) {
+  .wrap .hero__text {
+    padding: 0.2rem;
+    font-size: 1rem;
+  }
+}
 .wrap .hero__aside {
   margin-left: 1rem;
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 500px) {
+  .wrap .hero__aside {
+    margin: 1rem 0;
+    flex-direction: row;
+  }
 }
 .wrap .hero__side {
   background-color: orange;
@@ -427,14 +488,33 @@ body {
 .wrap .hero__side:last-child {
   margin-bottom: 0;
 }
+@media screen and (max-width: 500px) {
+  .wrap .hero__side {
+    margin: 0 0.5rem 0 0;
+  }
+  .wrap .hero__side:last-child {
+    margin-right: 0;
+  }
+}
 .wrap .hero__header-secondary {
   margin: 0;
   font-size: 3.5rem;
+}
+@media screen and (max-width: 500px) {
+  .wrap .hero__header-secondary {
+    font-size: 2.5rem;
+  }
 }
 
 .section-catalog {
   display: flex;
   margin: 1rem 0;
+}
+@media screen and (max-width: 500px) {
+  .section-catalog {
+    flex-direction: column;
+    margin: 0;
+  }
 }
 .section-catalog .article {
   flex: 1;
@@ -449,11 +529,21 @@ body {
 .section-catalog .article__icon {
   font-size: 3.5rem;
 }
+@media screen and (max-width: 500px) {
+  .section-catalog .article__icon {
+    font-size: 3rem;
+  }
+}
 .section-catalog .article__header {
   margin: 0.5rem;
 }
 .section-catalog .article__text {
   margin: 0.5rem 2rem;
+}
+@media screen and (max-width: 500px) {
+  .section-catalog .article {
+    margin: 0 0 0.5rem;
+  }
 }
 
 .taco {
@@ -462,29 +552,52 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 500px) {
+  .taco {
+    flex-direction: column;
+  }
+}
 .taco__img {
   padding: 2rem 0 2rem 2rem;
 }
 .taco__header {
   margin: 1rem 0;
 }
+@media screen and (max-width: 500px) {
+  .taco__header {
+    text-align: center;
+  }
+}
 .taco__text {
   line-height: 1.5;
   font-weight: 600;
 }
+@media screen and (max-width: 500px) {
+  .taco__text {
+    text-align: center;
+  }
+}
 .taco__link {
   display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   margin: 1rem 0;
   text-decoration: none;
   background-color: white;
   padding: 0.5rem 1rem;
 }
+@media screen and (max-width: 500px) {
+  .taco__link {
+    text-align: center;
+  }
+}
 
 .footer {
   margin: 0 50px 50px;
+}
+@media screen and (max-width: 500px) {
+  .footer {
+    margin: 1rem;
+  }
 }
 .footer__header {
   text-align: center;

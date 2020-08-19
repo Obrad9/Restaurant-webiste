@@ -1,8 +1,13 @@
 .nav {
     margin: 50px 50px 1rem;
 
+    @media screen and (max-width: 500px) {
+        margin: 1rem;
+    }
+
     &__list {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__item {
@@ -15,6 +20,16 @@
         &:last-child {
             margin: 0;
         }
+
+        @media screen and (max-width: 500px) {
+            margin-bottom: 0.5rem;
+
+            &:nth-child(4) {
+                @media screen and (min-width: 500px) {
+                    margin-right: 0;
+                }
+            }
+        }
     }
 
     &__link {
@@ -26,5 +41,10 @@
         color: black;
         font-weight: bold;
         text-transform: uppercase;
+
+        @media screen and (max-width: 500px) {
+            padding: 0.3rem;
+            font-size: 1.2rem;
+        }
     }
 }
