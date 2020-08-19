@@ -1,2 +1,2 @@
 # Restaurant-webiste
-Simple Restaurant Website using HTML + CSS
+Simple Restaurant Website using HTML + Sass
