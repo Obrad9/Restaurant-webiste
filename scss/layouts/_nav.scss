@@ -1,0 +1,30 @@
+.nav {
+    margin: 50px 50px 1rem;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        flex: 1;
+        list-style: none;
+        text-align: center;
+        background-color: $bg-color;
+        margin-right: 0.5rem;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        padding: 0.7rem;
+        font-size: 1.5rem;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}

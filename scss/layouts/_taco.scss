@@ -1,0 +1,28 @@
+.taco {
+    margin: 1rem 0;
+    background-color: $bg-color;
+    display: flex;
+    align-items: center;
+
+    &__img {
+        padding: 2rem 0 2rem 2rem;
+    }
+
+    &__header {
+        margin: 1rem 0;
+    }
+
+    &__text {
+        line-height: 1.5;
+        font-weight: 600;
+    }
+    
+    &__link {
+        display: block;
+        width: fit-content;
+        margin: 1rem 0;
+        text-decoration: none;
+        background-color: white;
+        padding: 0.5rem 1rem;
+    }
+}

@@ -1,0 +1,28 @@
+.section-catalog {
+    display: flex;
+    margin: 1rem 0;
+
+    .article {
+        flex: 1;
+        text-align: center;
+        background-color: $bg-color;
+        padding: 1.5rem 0;
+        margin-right: 1rem;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &__icon {
+            font-size: 3.5rem;
+        }
+
+        &__header {
+            margin: 0.5rem;
+        }
+
+        &__text {
+            margin: 0.5rem 2rem;
+        }
+    }
+}
