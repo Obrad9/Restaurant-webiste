@@ -412,14 +412,17 @@ body {
     font-size: 2rem;
   }
 }
-.nav__mobile {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 0.5rem 0.5rem 0.8rem;
-  display: inline-block;
-  cursor: pointer;
-  border: 2px solid orange;
+@media screen and (max-width: 550px) {
+  .nav__mobile {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 0.5rem 0.5rem 0.8rem;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid orange;
+    border-radius: 5px;
+  }
 }
 .nav__hamburger {
   width: 40px;
