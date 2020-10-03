@@ -8,6 +8,20 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+
+        @media screen and (max-width: 550px) {
+            // display: none;
+            // position: relative;
+            position: absolute;
+            top: 4rem;
+            right: 3rem;
+            flex-direction: column;
+            width: fit-content;
+            transform: scaleY(0);
+            transform-origin: top right;
+            transition: transform 500ms;
+            z-index: 1;
+        }
     }
 
     &__item {
@@ -21,14 +35,15 @@
             margin: 0;
         }
 
+        &:nth-child(4) {
+            @media screen and (max-width: 500px) {
+                margin-right: 0;
+            }
+        }
+
         @media screen and (max-width: 500px) {
             margin-bottom: 0.5rem;
-
-            &:nth-child(4) {
-                @media screen and (min-width: 500px) {
-                    margin-right: 0;
-                }
-            }
+            margin-right: 0;
         }
     }
 
@@ -43,8 +58,53 @@
         text-transform: uppercase;
 
         @media screen and (max-width: 500px) {
-            padding: 0.3rem;
-            font-size: 1.2rem;
+            // padding: 0.3rem;
+            padding: 2rem 3rem;
+            // font-size: 1.2rem;
+            font-size: 2rem;
+        }
+    }
+
+    &__mobile {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 0.5rem 0.5rem 0.8rem;
+        // padding-bottom: 6px;
+        display: inline-block;
+        cursor: pointer;
+        border: 2px solid $bg-color;
+    }
+
+    &__hamburger {
+        width: 40px;
+        height: 3px;
+        background-color: black;
+        display: inline-block;
+        position: relative;
+
+        @media screen and (min-width: 550px) {
+            display: none;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            right: 0;
+            width: 40px;
+            height: 3px;
+            background-color: black;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 0;
+            width: 40px;
+            height: 3px;
+            background-color: black;
         }
     }
 }
