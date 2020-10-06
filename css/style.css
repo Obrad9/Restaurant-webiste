@@ -364,7 +364,7 @@ body {
   .nav__list {
     position: absolute;
     top: 4rem;
-    right: 3rem;
+    right: 1rem;
     flex-direction: column;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -408,7 +408,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   .nav__link {
-    padding: 2rem 3rem;
+    padding: 2rem 3.5rem;
     font-size: 2rem;
   }
 }
